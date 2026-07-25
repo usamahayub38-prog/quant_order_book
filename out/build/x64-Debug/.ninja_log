@@ -1,3 +1,6 @@
 # ninja log v6
 8	455	7978151222023119	CMakeFiles/orderbook.dir/src/main.cpp.obj	589c412acad63b51
 456	703	7978151226492305	orderbook.exe	81b9d13624adf3d7
+6	791	8067237099311906	CMakeFiles/orderbook.dir/src/main.cpp.obj	8a438248501e205a
+21	366	8067237769863031	CMakeFiles/orderbook.dir/src/Order.cpp.obj	a0202d5ae90eed22
+367	688	8067237773328676	orderbook.exe	b9ff4c4ce098feb6

@@ -51,6 +51,15 @@ build cmake_object_order_depends_target_orderbook: phony || .
 
 build CMakeFiles\orderbook.dir\src\main.cpp.obj: CXX_COMPILER__orderbook_unscanned_Debug C$:\Users\usama\VS_Projects\quant_order_book\src\main.cpp || cmake_object_order_depends_target_orderbook
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\usama\VS_Projects\quant_order_book\include
+  OBJECT_DIR = CMakeFiles\orderbook.dir
+  OBJECT_FILE_DIR = CMakeFiles\orderbook.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\orderbook.dir\
+  TARGET_PDB = orderbook.pdb
+
+build CMakeFiles\orderbook.dir\src\Order.cpp.obj: CXX_COMPILER__orderbook_unscanned_Debug C$:\Users\usama\VS_Projects\quant_order_book\src\Order.cpp || cmake_object_order_depends_target_orderbook
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17
+  INCLUDES = -IC:\Users\usama\VS_Projects\quant_order_book\include
   OBJECT_DIR = CMakeFiles\orderbook.dir
   OBJECT_FILE_DIR = CMakeFiles\orderbook.dir\src
   TARGET_COMPILE_PDB = CMakeFiles\orderbook.dir\
@@ -64,7 +73,7 @@ build CMakeFiles\orderbook.dir\src\main.cpp.obj: CXX_COMPILER__orderbook_unscann
 #############################################
 # Link the executable orderbook.exe
 
-build orderbook.exe: CXX_EXECUTABLE_LINKER__orderbook_Debug CMakeFiles\orderbook.dir\src\main.cpp.obj
+build orderbook.exe: CXX_EXECUTABLE_LINKER__orderbook_Debug CMakeFiles\orderbook.dir\src\main.cpp.obj CMakeFiles\orderbook.dir\src\Order.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
