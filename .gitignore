@@ -42,3 +42,6 @@
 
 # folders
 .vs/
+build/
+Debug/
+Release/
